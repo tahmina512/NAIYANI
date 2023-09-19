@@ -3,19 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
-import { Homepage1Component } from './homepage1/homepage1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AppRoutingModule } from './app.routing.module';
+import { SigninComponent } from './signin/signin.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
-    Homepage1Component,
     LandingpageComponent,
+    SigninComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule,BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

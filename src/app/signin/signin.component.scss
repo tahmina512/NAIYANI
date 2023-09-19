@@ -1,0 +1,97 @@
+@import "src/app/shared/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.filter-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  .icon-with-border {
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 7px 5px;
+  }
+  animation: appearButtons 3s ease forwards;
+}
+.filter-icon-container:hover {
+  color: gray;
+}
+.button-container {
+  @each $property, $value in $flex-center-styles {
+    #{$property}: $value;
+    height: 100vh;
+  }
+}
+
+.logo-container,
+.buttons-container {
+  text-align: center;
+  position: relative;
+}
+
+.text {
+  font-family: "Raleway", sans-serif;
+  font-size: 45px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+  // text-shadow: 0px 4px 4px rgba(15, 12, 12, 0.5);
+}
+
+.shape {
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: black;
+}
+
+.gradient-button {
+  padding: 15px 60px;
+  border: solid 2px;
+  border-radius: 25px;
+  background-color: white;
+  // color: black;
+  // font-size: 11px;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 0; /* Initially hide the buttons */
+}
+
+/* Animation for username button */
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.username-button {
+  animation: appearButtons 3s ease forwards;
+  // animation-delay: 1s; /* Delay the appearance of username button after logo */
+}
+
+.password-button {
+  animation: appearButtons 3s ease forwards;
+  // animation-delay: 1s; /* Delay the appearance of password button after logo */
+}
+.arrow-button {
+  // padding: 10px 45px;
+
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: solid 1px;
+  // font-size: 11px;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 0; /* Initially hide the buttons */
+  animation: appearButtons 3s ease forwards;
+  // animation-delay: 1s; /* Delay the appearance of password button after logo */
+}
+
+@media (max-width: 480px) {
+  .gradient-button {
+    padding: 15px 130px;
+  }
+}
