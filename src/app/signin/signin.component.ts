@@ -12,7 +12,7 @@ export class SigninComponent {
   constructor(private router: Router) {}
   ngOnInit(): void {
     setTimeout(() => {
-      this.router.navigate(['']);
+      this.router.navigate(['/database-btn']);
     }, 3000);
   }
 }

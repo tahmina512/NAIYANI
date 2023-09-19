@@ -1,0 +1,70 @@
+@import "src/app/shared/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-position {
+  position: absolute;
+  top: 70px; /* Adjust the top position as needed */
+  left: 60px; /* Adjust the left position as needed */
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: appearButtons 3s ease forwards;
+}
+.position {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+  animation: appearButtons 3s ease forwards;
+}
+.filter-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  cursor: pointer;
+  animation: appearButtons 3s ease forwards;
+}
+.icon-with-border {
+  border-radius: 15px;
+  border: 1px solid black;
+  padding: 7px 5px;
+}
+
+.banner-container {
+  @each $property, $value in $flex-center-styles {
+    #{$property}: $value;
+    height: 100vh;
+  }
+
+  .banner-button {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    // letter-spacing: 2px;
+    font-weight: bolder;
+    padding: 6px 50px;
+    background: white;
+    // box-shadow: 4px 4px black;
+    border: 2px solid;
+    border-radius: 25px;
+    white-space: normal; /* Allow text to wrap */
+    cursor: pointer;
+    text-align: center;
+  }
+
+  // Add media query for smaller screens
+  @media (max-width: 768px) {
+    .banner-button {
+      font-size: 10px;
+    }
+  }
+  animation: appearButtons 3s ease forwards;
+}

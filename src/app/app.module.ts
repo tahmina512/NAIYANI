@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SigninComponent } from './signin/signin.component';
-
+import { DatabaseButtonComponent } from './database-button/database-button.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +16,9 @@ import { SigninComponent } from './signin/signin.component';
     HomepageComponent,
     LandingpageComponent,
     SigninComponent,
+    DatabaseButtonComponent,
   ],
-  imports: [BrowserModule,BrowserAnimationsModule, AppRoutingModule],
+  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })

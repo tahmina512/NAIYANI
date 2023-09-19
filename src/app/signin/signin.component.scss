@@ -1,6 +1,19 @@
 @import "src/app/shared/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .filter-icon-container {
+  position: flex;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+
+  .icon-with-border {
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 7px 5px;
+  }
+  animation: appearButtons 3s ease forwards;
+}
+.filter-icon-container {
   position: absolute;
   top: 20px;
   right: 20px;
