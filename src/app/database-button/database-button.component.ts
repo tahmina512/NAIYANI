@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-database-button',
   templateUrl: './database-button.component.html',
-  styleUrls: ['./database-button.component.scss']
+  styleUrls: ['./database-button.component.scss'],
 })
-export class DatabaseButtonComponent {
-
+export class DatabaseButtonComponent implements OnInit {
+  constructor(private router: Router) {}
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.router.navigate(['/list']);
+    }, 3000);
+  }
 }

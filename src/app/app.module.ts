@@ -9,6 +9,8 @@ import { LandingpageComponent } from './landingpage/landingpage.component';
 import { AppRoutingModule } from './app.routing.module';
 import { SigninComponent } from './signin/signin.component';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
+import { DatabaseListComponent } from './database-list/database-list.component';
+import { DataInfoComponent } from './data-info/data-info.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
     LandingpageComponent,
     SigninComponent,
     DatabaseButtonComponent,
+    DatabaseListComponent,
+    DataInfoComponent
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],

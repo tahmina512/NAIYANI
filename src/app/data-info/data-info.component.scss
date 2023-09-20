@@ -1,0 +1,70 @@
+@import "src/app/shared/variables.scss";
+
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.text-position {
+  position: absolute;
+  top: 70px; /* Adjust the top position as needed */
+  left: 60px; /* Adjust the left position as needed */
+  font-family: "raleway", sans-serif;
+  font-size: 24px; /* Adjust the font size as needed */
+  letter-spacing: 1px;
+  animation: appearButtons 3s ease forwards;
+  margin-bottom: 10px;
+}
+.position {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  cursor: pointer;
+  animation: appearButtons 3s ease forwards;
+}
+.filter-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  cursor: pointer;
+  animation: appearButtons 3s ease forwards;
+}
+.icon-with-border {
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 7px 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 5 columns */
+  grid-template-rows: repeat(5, 1fr); /* 3 rows */
+  /* Adjust the gap between buttons */
+  row-gap: 30px;
+  column-gap: 15px;
+  margin-top: 10%; /* Adjust the top margin as needed */
+  margin-left: 25px;
+  margin-right: 25px;
+  //   opacity: 0;
+  //   animation: appearButtons 3s ease forwards;
+  //   animation-delay: 2s;
+}
+
+.grid-button {
+  white-space: normal;
+  word-wrap: break-word;
+  // font-family: "Raleway", sans-serif;
+  font-size: 16px; /* Adjust the font size as needed */
+  font-weight: bold;
+  padding: 20px 15px;
+  //  width: fit-content;
+  width: auto;
+  background: white;
+  border: 2px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}

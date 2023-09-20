@@ -1,5 +1,4 @@
 @import "src/app/shared/variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 .filter-icon-container {
   position: flex;
   top: 20px;
@@ -43,7 +42,7 @@
 }
 
 .text {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   font-size: 45px;
   letter-spacing: 10px;
   font-weight: bolder;
