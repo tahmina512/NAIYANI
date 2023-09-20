@@ -11,6 +11,6 @@ export class DatabaseListComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigate(['/info']);
-    }, 5000);
+    }, 4000);
   }
 }
