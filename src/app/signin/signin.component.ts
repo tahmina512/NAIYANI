@@ -13,6 +13,6 @@ export class SigninComponent {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigate(['/database-btn']);
-    }, 3000);
+    }, 5000);
   }
 }

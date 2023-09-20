@@ -11,6 +11,7 @@ import { SigninComponent } from './signin/signin.component';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DataInfoComponent } from './data-info/data-info.component';
     SigninComponent,
     DatabaseButtonComponent,
     DatabaseListComponent,
-    DataInfoComponent
+    DataInfoComponent,
+    LogoComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],

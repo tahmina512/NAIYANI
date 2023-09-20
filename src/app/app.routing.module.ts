@@ -7,6 +7,7 @@ import { SigninComponent } from './signin/signin.component';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
+import { LogoComponent } from './logo/logo.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -14,6 +15,8 @@ const appRoutes: Routes = [
   { path: 'database-btn', component: DatabaseButtonComponent },
   { path: 'list', component: DatabaseListComponent },
   { path: 'info', component: DataInfoComponent },
+  { path: 'home', component: HomepageComponent },
+  { path: 'logo', component: LogoComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

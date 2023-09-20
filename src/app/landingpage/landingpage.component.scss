@@ -1,21 +1,29 @@
-.svg-wrapper {
-  position: relative;
-  // top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0 auto;
-  width: 320px;
-  // transform: scaleY(-1) scaleX(-1);
+@import "src/app/shared/variables.scss";
+.button-container {
+  @each $property, $value in $flex-center-styles {
+    #{$property}: $value;
+    height: 100vh;
+  }
 }
+
+// .svg-wrapper {
+//   position: relative;
+//   // top: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 100vh;
+//   margin: 0 auto;
+//   width: 320px;
+//   // transform: scaleY(-1) scaleX(-1);
+// }
 
 @keyframes moveUpAnimation {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-115px); /* Adjust the final position as needed */
+    transform: translateY(-94px); /* Adjust the final position as needed */
   }
 }
 .move-up {
@@ -25,44 +33,36 @@
 
 .new-svg-text {
   font-family: "Raleway";
-
-  font-size: 38px;
-
-  line-height: 32px;
-  // font-weight: bolder;
-  letter-spacing: 8px;
-
-  color: #000000;
-  position: relative;
-
-  overflow: hidden;
-
-  border-right: 0.15em solid white; /* The typwriter cursor */
-
-  white-space: nowrap; /* Keeps the content on a single line */
-  top: -60px;
-
-  position: relative;
-  text-shadow: 0px 4px 4px rgba(15, 12, 12, 0.5);
+  font-size: 45px;
+  letter-spacing: 10px;
 }
-@keyframes animatedStroke {
-  0% {
-    stroke-width: 6px;
-    stroke-dashoffset: -465; /* Set to negative path length */
-    stroke-dasharray: 140 790; /* Set to the path length */
-  }
-  50% {
-    stroke-width: 6px;
-    stroke-dashoffset: 0;
-    stroke-dasharray: 790;
-  }
-}
+// @keyframes animatedStroke {
+//   // 0% {
+//   //   stroke-width: 6px;
+//   //   stroke-dashoffset: 0; /* Set to negative path length */
+//   //   stroke-dasharray: 140 790; /* Set to the path length */
+//   // }
+//   // 50% {
+//   //   stroke-width: 6px;
+//   //   stroke-dashoffset: 0;
+//   //   stroke-dasharray: 790;
+//   // }
+//   0% {
+//     stroke-dashoffset: 0; /* Set to the path length */
+//     stroke-dasharray: 140 790; /* No visible stroke initially */
+//   }
+//   50% {
+//     stroke-dashoffset: 0; /* Stroke is fully visible */
+//     stroke-dasharray:  790; /* Length of the stroke */
+//   }
+
+// }
 .shape {
-  stroke-width: 6px;
+  stroke-width: 4px;
   cursor: pointer;
-  transform: scaleY(-1) scaleX(-1);
-  transform-origin: center center;
+  // transform: scaleY(-1) scaleX(-1);
+  // transform-origin: center center;
   fill: transparent;
   stroke: #000000;
-  animation: animatedStroke 4s linear 1; /* Adjust duration as needed */
+  // animation: animatedStroke 4s linear 1; /* Adjust duration as needed */
 }
