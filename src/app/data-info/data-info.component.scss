@@ -38,13 +38,15 @@
   padding: 7px 5px;
 }
 .grid-container {
+   
   display: grid;
+  width: auto;
   grid-template-columns: repeat(4, 1fr); /* 5 columns */
   grid-template-rows: repeat(5, 1fr); /* 3 rows */
   /* Adjust the gap between buttons */
   row-gap: 30px;
   column-gap: 15px;
-  margin-top: 10%; /* Adjust the top margin as needed */
+  margin-top: 115px; /* Adjust the top margin as needed */
   margin-left: 25px;
   margin-right: 25px;
   //   opacity: 0;
@@ -58,9 +60,9 @@
   // font-family: "Raleway", sans-serif;
   font-size: 16px; /* Adjust the font size as needed */
   font-weight: bold;
-  padding: 20px 15px;
+  padding: 35px 10px;
   //  width: fit-content;
-  width: auto;
+  //   width: auto;
   background: white;
   border: 2px solid;
   border-radius: 20px;

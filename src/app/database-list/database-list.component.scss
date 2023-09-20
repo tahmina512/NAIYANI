@@ -43,6 +43,7 @@
   }
 
   .banner-button {
+    position: absolute;
     font-family: "Raleway", sans-serif;
     font-size: 24px;
     // letter-spacing: 2px;
@@ -56,6 +57,7 @@
     cursor: pointer;
     text-align: center;
     margin-bottom: 10px;
+
   }
 
   // Add media query for smaller screens
@@ -67,7 +69,9 @@
   animation: appearButtons 3s ease forwards;
 }
 .grid-container {
+
   display: grid;
+  position: absolute;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   grid-template-rows: repeat(3, 1fr); /* 3 rows */
   /* Adjust the gap between buttons */
