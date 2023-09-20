@@ -74,10 +74,9 @@
   position: absolute;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   grid-template-rows: repeat(3, 1fr); /* 3 rows */
-  /* Adjust the gap between buttons */
   row-gap: 30px;
   column-gap: 15px;
-  margin-top: -75px; /* Adjust the top margin as needed */
+  margin-top: -75px; 
   margin-left: 60px;
   margin-right: 50px;
   opacity: 0;
