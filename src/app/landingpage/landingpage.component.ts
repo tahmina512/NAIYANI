@@ -1,10 +1,3 @@
-import {
-  animate,
-  state,
-  style,
-  transition,
-  trigger,
-} from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -31,8 +24,8 @@ export class LandingpageComponent implements OnInit {
         this.typedText = content.slice(0, index);
         index++;
         setTimeout(type, 200);
-       } // Adjust the typing speed (time between letters)
-      // } 
+      } // Adjust the typing speed (time between letters)
+      // }
       else {
         // Typing animation finished, start the move-up animation after a delay
         setTimeout(() => {
