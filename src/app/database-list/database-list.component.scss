@@ -36,7 +36,7 @@
   right: 15px;
   cursor: pointer;
   animation: appearButtons 3s ease forwards;
-   border-radius: 15px;
+  border-radius: 15px;
   border: 2px solid black;
   padding: 7px 5px;
   background-color: white;
@@ -62,26 +62,20 @@
     cursor: pointer;
     text-align: center;
     margin-bottom: 10px;
-
   }
+  //  Add media query for smaller screens
 
-  // Add media query for smaller screens
-  @media (max-width: 768px) {
-    .banner-button {
-      font-size: 10px;
-    }
-  }
   animation: appearButtons 3s ease forwards;
 }
-.grid-container {
 
+.grid-container {
   display: grid;
-  position: absolute;
+  // position: absolute;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   grid-template-rows: repeat(3, 1fr); /* 3 rows */
   row-gap: 30px;
   column-gap: 15px;
-  margin-top: -75px; 
+  margin-top: -75px;
   margin-left: 60px;
   margin-right: 50px;
   opacity: 0;
@@ -104,4 +98,17 @@
   cursor: pointer;
   text-align: center;
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    margin-left: 10px; /* Adjust margin for smaller screens */
+    margin-right: 10px; /* Adjust margin for smaller screens */
+    column-gap: 10px; /* Adjust column gap for smaller screens */
+  }
+
+  .grid-button {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    padding: 15px 10px; /* Adjust padding for smaller screens */
+  }
 }
