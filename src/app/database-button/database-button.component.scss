@@ -65,10 +65,10 @@
   }
 
   // Add media query for smaller screens
-  @media (max-width: 768px) {
-    .banner-button {
-      font-size: 10px;
-    }
-  }
+  // @media (max-width: 768px) {
+  //   .banner-button {
+  //     font-size: 10px;
+  //   }
+  // }
   animation: appearButtons 3s ease forwards;
 }
