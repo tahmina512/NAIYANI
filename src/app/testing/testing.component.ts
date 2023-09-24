@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-testing',
@@ -6,26 +7,38 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testing.component.scss'],
 })
 export class TestingComponent implements OnInit {
-  content = 'Your Text Here'; // The text to type
-  typedText: { text: string; opacity: number }[] = []; // Initialize as an empty array
+  moveLogo: boolean = false;
+  typedText: string = '';
+  showShape: boolean = false;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.typeText(0); // Start typing from the first letter
+    this.startTypingAnimation();
   }
+  startTypingAnimation() {
+    const content = 'NAIYANI';
+    let index = 0;
 
-  typeText(index: number) {
-    if (index <= this.content.length) {
-      // Push each letter into the typedText array with an initial opacity of 0
-      this.typedText.push({ text: this.content[index], opacity: 0 });
+    const type = () => {
+      if (index <= content.length) {
+        this.typedText = content.slice(0, index);
+        index++;
+        setTimeout(type, 200);
+      } else {
+        setTimeout(() => {
+          this.showShape = true; // Show the shape
 
-      // After a short delay, gradually increase the opacity
-      setTimeout(() => {
-        this.typedText[index].opacity = 1; // Set opacity to 1 (fully visible)
-        this.typeText(index + 1); // Move to the next letter
-      }, 200); // Adjust the typing speed (time between letters)
-    }
+          // setTimeout(() => {
+          //   this.moveLogo = true; // Trigger the move-up animation
+          //   setTimeout(() => {
+          //     this.router.navigate(['/signin']);
+          //   }, 3000);
+          // }, 2000); // Adjust the delay as needed for the brief moment
+        }, 700);
+      }
+    };
+
+    setTimeout(type, 10); // Delay before typing starts
   }
 }
-

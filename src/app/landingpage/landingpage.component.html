@@ -1,28 +1,27 @@
 <div class="button-container">
-  <div class="svg-wrapper">
-    <svg
+  <svg
+    height="100"
+    width="350"
+    xmlns="http://www.w3.org/2000/svg"
+    [class.move-up]="moveLogo"
+    id="svg-container"
+  >
+    <text
+      class="new-svg-text"
+      x="50%"
+      y="50%"
+      dominant-baseline="middle"
+      text-anchor="middle"
+    >
+      <tspan [innerHTML]="typedText"></tspan>
+    </text>
+    <rect
+      class="shape"
       height="100"
       width="350"
-      xmlns="http://www.w3.org/2000/svg"
-      [class.move-up]="moveLogo"
-    >
-      <text
-        class="new-svg-text"
-        x="50%"
-        y="50%"
-        dominant-baseline="middle"
-        text-anchor="middle"
-      >
-        <tspan [innerHTML]="typedText"></tspan>
-      </text>
-      <rect
-        class="shape"
-        height="100"
-        width="350"
-        [attr.fill]="showShape ? 'transparent' : 'transparent'"
-        [class.shape]="showShape"
-      />
-    </svg>
-    <!-- <div class="text">NAIYANI</div> -->
-  </div>
+      [attr.fill]="showShape ? 'transparent' : 'transparent'"
+      [class.shape]="showShape"
+    />
+  </svg>
+  <!-- <div class="text">NAIYANI</div> -->
 </div>

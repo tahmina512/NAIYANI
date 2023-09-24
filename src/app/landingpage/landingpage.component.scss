@@ -33,29 +33,22 @@
   font-family: "Raleway";
   font-size: 45px;
   letter-spacing: 10px;
+  width: 0;
+  transition: width 2.5s ease-in-out;
   // animation: typing 6s steps(80, end);
 }
 @keyframes animatedStroke {
-  // 0% {
-  //   stroke-width: 6px;
-  //   stroke-dashoffset: 0; /* Set to negative path length */
-  //   stroke-dasharray: 140 790; /* Set to the path length */
-  // }
-  // 50% {
-  //   stroke-width: 6px;
-  //   stroke-dashoffset: 0;
-  //   stroke-dasharray: 790;
-  // }
   0% {
-    // opacity: 1;
-    stroke-dashoffset: 0; /* Set to the path length */
-    stroke-dasharray: 140 790; /* No visible stroke initially */
+   
+    stroke-dashoffset: 0; /* Set to negative path length */
+    stroke-dasharray: 140 790; /* Set to the path length */
   }
-  50% {
-    // opacity: 1;
-    stroke-dashoffset: 0; /* Stroke is fully visible */
-    stroke-dasharray: 790; /* Length of the stroke */
+  100% {
+ 
+    stroke-dashoffset: 0;
+    stroke-dasharray: 900;
   }
+
 }
 .shape {
   stroke-width: 4px;
