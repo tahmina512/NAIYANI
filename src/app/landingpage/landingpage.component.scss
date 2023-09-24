@@ -3,6 +3,8 @@
   @each $property, $value in $flex-center-styles {
     #{$property}: $value;
     height: 100vh;
+    margin: 0 auto;
+    width: 350px;
   }
 }
 
@@ -33,6 +35,8 @@
   font-family: "Raleway";
   font-size: 45px;
   letter-spacing: 10px;
+  position: relative;
+  top: -60px;
   // animation: typing 6s steps(80, end);
 }
 @keyframes animatedStroke {
