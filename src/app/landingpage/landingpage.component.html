@@ -16,11 +16,11 @@
       <tspan [innerHTML]="typedText"></tspan>
     </text>
     <rect
+      fill="transparent"
       class="shape"
       height="100"
       width="350"
-      [attr.fill]="showShape ? 'transparent' : 'transparent'"
-      [class.shape]="showShape"
+      [ngClass]="{ shape: showShape }"
     />
   </svg>
   <!-- <div class="text">NAIYANI</div> -->

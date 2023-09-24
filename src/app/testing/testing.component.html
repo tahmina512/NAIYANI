@@ -22,16 +22,15 @@
         [attr.fill]="showShape ? 'transparent' : 'transparent'"
         [class.shape]="showShape"
       />
-     
-       <path
+
+      <path
         class="stroke-path"
         d="M0 0 L350 0"
         fill="transparent"
         stroke="black"
         stroke-width="4"
         stroke-dasharray="350"
-    
-      > 
+      >
         <animate
           attributeName="stroke-dashoffset"
           from="-350"
@@ -39,15 +38,14 @@
           dur="2s"
         />
       </path>
-       <path
+      <path
         class="stroke-path"
         d="M0 100 L350 100"
         fill="transparent"
         stroke="black"
         stroke-width="4"
         stroke-dasharray="350"
-   
-      > 
+      >
         <animate
           attributeName="stroke-dashoffset"
           from="350"
@@ -56,11 +54,11 @@
           values="350;0"
         />
       </path>
-      <path
+      <!-- <path
         class="stroke-path"
         d="M0 0 V100"
         fill="transparent"
-        stroke="red"
+        stroke="black"
         stroke-width="4"
         stroke-dasharray="100"
       >
@@ -76,7 +74,7 @@
         class="stroke-path"
         d="M350 0 V100"
         fill="transparent"
-        stroke="red"
+        stroke="black"
         stroke-width="4"
         stroke-dasharray="100"
       >
@@ -87,8 +85,7 @@
           dur="2s"
           delay="5s"
         />
-      </path> 
+      </path> -->
     </svg>
-   
   </div>
 </div>

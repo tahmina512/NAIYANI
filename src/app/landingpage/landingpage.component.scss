@@ -11,7 +11,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-94px); /* Adjust the final position as needed */
+    transform: translateY(-97px); /* Adjust the final position as needed */
   }
 }
 .move-up {
@@ -39,16 +39,13 @@
 }
 @keyframes animatedStroke {
   0% {
-   
     stroke-dashoffset: 0; /* Set to negative path length */
     stroke-dasharray: 140 790; /* Set to the path length */
   }
   100% {
- 
     stroke-dashoffset: 0;
     stroke-dasharray: 900;
   }
-
 }
 .shape {
   stroke-width: 4px;
@@ -56,7 +53,6 @@
   // transform: scaleY(-1) scaleX(-1);
   // transform-origin: center center;
   // opacity: 0;
-  // fill: transparent;
   stroke: #000000;
-  animation: animatedStroke 4s linear 1; /* Adjust duration as needed */
+  animation: animatedStroke 3s linear 1; /* Adjust duration as needed */
 }
