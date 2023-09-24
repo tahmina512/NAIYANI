@@ -1,0 +1,7 @@
+<svg>
+  <text x="50" y="50">
+    <ng-container *ngFor="let letter of typedText; let i = index">
+      <tspan class="new-svg-text" [style.opacity]="letter.opacity">{{ letter.text }}</tspan>
+    </ng-container>
+  </text>
+</svg>

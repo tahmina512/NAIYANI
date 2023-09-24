@@ -15,7 +15,13 @@
       >
         <tspan [innerHTML]="typedText"></tspan>
       </text>
-      <rect class="shape" height="100" width="350" />
+      <rect
+        class="shape"
+        height="100"
+        width="350"
+        [attr.fill]="showShape ? 'transparent' : 'transparent'"
+        [class.shape]="showShape"
+      />
     </svg>
     <!-- <div class="text">NAIYANI</div> -->
   </div>

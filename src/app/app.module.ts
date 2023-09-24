@@ -12,6 +12,7 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { LogoComponent } from './logo/logo.component';
+import { TestingComponent } from './testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { LogoComponent } from './logo/logo.component';
     DatabaseListComponent,
     DataInfoComponent,
     LogoComponent,
+    TestingComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],

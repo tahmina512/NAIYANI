@@ -6,18 +6,6 @@
   }
 }
 
-// .svg-wrapper {
-//   position: relative;
-//   // top: 50%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   height: 100vh;
-//   margin: 0 auto;
-//   width: 320px;
-//   // transform: scaleY(-1) scaleX(-1);
-// }
-
 @keyframes moveUpAnimation {
   0% {
     transform: translateY(0);
@@ -30,40 +18,52 @@
   animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
   transform-origin: center bottom;
 }
+// @keyframes typing {
+//   from {
+//     width: 0;
+//     opacity: 0;
+//   }
 
+//   to {
+//     opacity: 1;
+//     width: 100%;
+//   }
+// }
 .new-svg-text {
   font-family: "Raleway";
   font-size: 45px;
   letter-spacing: 10px;
-  
+  // animation: typing 6s steps(80, end);
 }
-// @keyframes animatedStroke {
-//   // 0% {
-//   //   stroke-width: 6px;
-//   //   stroke-dashoffset: 0; /* Set to negative path length */
-//   //   stroke-dasharray: 140 790; /* Set to the path length */
-//   // }
-//   // 50% {
-//   //   stroke-width: 6px;
-//   //   stroke-dashoffset: 0;
-//   //   stroke-dasharray: 790;
-//   // }
-//   0% {
-//     stroke-dashoffset: 0; /* Set to the path length */
-//     stroke-dasharray: 140 790; /* No visible stroke initially */
-//   }
-//   50% {
-//     stroke-dashoffset: 0; /* Stroke is fully visible */
-//     stroke-dasharray:  790; /* Length of the stroke */
-//   }
-
-// }
+@keyframes animatedStroke {
+  // 0% {
+  //   stroke-width: 6px;
+  //   stroke-dashoffset: 0; /* Set to negative path length */
+  //   stroke-dasharray: 140 790; /* Set to the path length */
+  // }
+  // 50% {
+  //   stroke-width: 6px;
+  //   stroke-dashoffset: 0;
+  //   stroke-dasharray: 790;
+  // }
+  0% {
+    // opacity: 1;
+    stroke-dashoffset: 0; /* Set to the path length */
+    stroke-dasharray: 140 790; /* No visible stroke initially */
+  }
+  50% {
+    // opacity: 1;
+    stroke-dashoffset: 0; /* Stroke is fully visible */
+    stroke-dasharray: 790; /* Length of the stroke */
+  }
+}
 .shape {
   stroke-width: 4px;
   cursor: pointer;
   // transform: scaleY(-1) scaleX(-1);
   // transform-origin: center center;
-  fill: transparent;
+  // opacity: 0;
+  // fill: transparent;
   stroke: #000000;
-  // animation: animatedStroke 4s linear 1; /* Adjust duration as needed */
+  animation: animatedStroke 4s linear 1; /* Adjust duration as needed */
 }

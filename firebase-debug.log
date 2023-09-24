@@ -1,0 +1,78 @@
+[debug] [2023-09-21T07:50:00.517Z] ----------------------------------------------------------------------
+[debug] [2023-09-21T07:50:00.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-21T07:50:00.523Z] CLI Version:   12.5.4
+[debug] [2023-09-21T07:50:00.524Z] Platform:      win32
+[debug] [2023-09-21T07:50:00.525Z] Node Version:  v18.17.0
+[debug] [2023-09-21T07:50:00.531Z] Time:          Thu Sep 21 2023 13:50:00 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-09-21T07:50:00.532Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-21T07:50:00.545Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-21T07:50:00.546Z] > authorizing via signed-in user (tahminatish001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Angular\design4naiyani\naiyani
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-09-21T07:51:43.634Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-09-21T07:51:43.635Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"newProject","name":"newProject"}
+[debug] [2023-09-21T07:51:48.222Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2023-09-21T07:51:48.222Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [project_id] has issue [project_id contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2023-09-21T07:51:48.225Z] FirebaseError: HTTP Error: 400, field [project_id] has issue [project_id contains invalid characters]
+    at responseToError (C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2023-09-21T07:53:46.717Z] ----------------------------------------------------------------------
+[debug] [2023-09-21T07:53:46.724Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-21T07:53:46.725Z] CLI Version:   12.5.4
+[debug] [2023-09-21T07:53:46.726Z] Platform:      win32
+[debug] [2023-09-21T07:53:46.726Z] Node Version:  v18.17.0
+[debug] [2023-09-21T07:53:46.729Z] Time:          Thu Sep 21 2023 13:53:46 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-09-21T07:53:46.729Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-21T07:53:46.755Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-21T07:53:46.756Z] > authorizing via signed-in user (tahminatish001@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Angular\design4naiyani\naiyani
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2023-09-21T07:55:53.548Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2023-09-21T07:55:53.548Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"animation-project","name":"animation-project"}
+[debug] [2023-09-21T07:55:56.489Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2023-09-21T07:55:56.490Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2023-09-21T07:55:56.494Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\TISHA\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID animation-project. Please try again with a unique project ID.

@@ -12,12 +12,15 @@
   letter-spacing: 8px;
   color: black;
   opacity: 0;
-  animation: letter-fade 1s ease-in-out forwards;
+  animation: letter-fade 3s ease-in-out forwards;
 }
 
 @keyframes letter-fade {
   0% {
     opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

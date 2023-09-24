@@ -8,6 +8,7 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { LogoComponent } from './logo/logo.component';
+import { TestingComponent } from './testing/testing.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -17,6 +18,7 @@ const appRoutes: Routes = [
   { path: 'info', component: DataInfoComponent },
   { path: 'home', component: HomepageComponent },
   { path: 'logo', component: LogoComponent },
+  { path: 'test', component: TestingComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

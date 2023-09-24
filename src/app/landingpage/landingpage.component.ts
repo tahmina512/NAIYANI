@@ -10,8 +10,10 @@ export class LandingpageComponent implements OnInit {
   moveLogo: boolean = false;
   typedText: string = '';
   showShape: boolean = false;
+  // textOpacity = 0; // Initialize opacity to 0
 
   constructor(private router: Router) {}
+
   ngOnInit(): void {
     this.startTypingAnimation();
   }
@@ -29,14 +31,18 @@ export class LandingpageComponent implements OnInit {
       else {
         // Typing animation finished, start the move-up animation after a delay
         setTimeout(() => {
-          this.moveLogo = true; // Trigger the move-up animation
-        }, 500); // Adjust the delay as needed
+          this.showShape = true; // Show the shape
+
+          setTimeout(() => {
+            this.moveLogo = true; // Trigger the move-up animation
+            setTimeout(() => {
+              this.router.navigate(['/signin']);
+            }, 3000);
+          }, 2000); // Adjust the delay as needed for the brief moment
+        }, 700);
       }
     };
 
     setTimeout(type, 10); // Delay before typing starts (1s in this case)
-    setTimeout(() => {
-      this.router.navigate(['/signin']);
-    }, 4000);
   }
 }

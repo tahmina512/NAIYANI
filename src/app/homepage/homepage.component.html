@@ -1,7 +1,8 @@
 <div class="container">
   <ng-container *ngFor="let letter of letters; let i = index">
-    <span class="letter" [style.animation-delay]="i * 0.5 + 's'">{{
-      letter
-    }}</span>
+    <span class="letter" [style.animation-delay]="i * 0.5 + 's'">
+      <span class="typing-effect">{{ letter }}</span>
+      </span
+    >
   </ng-container>
 </div>
