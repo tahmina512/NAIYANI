@@ -31,9 +31,9 @@ export class LandingpageComponent implements OnInit {
 
           setTimeout(() => {
             this.moveLogo = true; // Trigger the move-up animation
-            setTimeout(() => {
-              this.router.navigate(['/signin']);
-            }, 3000);
+            // setTimeout(() => {
+            //   this.router.navigate(['/signin']);
+            // }, 3000);
           }, 4000); // Adjust the delay as needed for the brief moment
         }, 500);
       }

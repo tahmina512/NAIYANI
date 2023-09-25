@@ -1,10 +1,17 @@
-<div class="button-container">
-  <svg class="svg-wrapper"
+<div class="svg-wrapper">
+  <svg
     height="100"
     width="350"
     xmlns="http://www.w3.org/2000/svg"
     [class.move-up]="moveLogo"
   >
+  <rect
+      fill="transparent"
+      class="shape"
+      height="100"
+      width="350"
+      [ngClass]="{ shape: showShape }"
+    />
     <text
       class="new-svg-text"
       x="50%"
@@ -12,15 +19,8 @@
       dominant-baseline="middle"
       text-anchor="middle"
     >
-      <tspan [innerHTML]="typedText"></tspan>
+       <tspan>{{ typedText }}</tspan>
     </text>
-    <rect
-      fill="transparent"
-      class="shape"
-      height="100"
-      width="350"
-      [ngClass]="{ shape: showShape }"
-    />
+    
   </svg>
-  <!-- <div class="text">NAIYANI</div> -->
 </div>
