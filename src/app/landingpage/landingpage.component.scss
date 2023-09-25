@@ -16,6 +16,9 @@
   white-space: nowrap;
   overflow: hidden;
   text-anchor: middle;
+  width: 0;
+  transition: width 2s ease-in-out;
+
   // animation: typing 6s steps(80, end);
 }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,7 @@ export class LandingpageComponent implements OnInit {
   typedText: string = '';
   showShape: boolean = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private renderer: Renderer2) {}
 
   ngOnInit(): void {
     this.startTypingAnimation();
@@ -40,5 +40,6 @@ export class LandingpageComponent implements OnInit {
     };
 
     setTimeout(type, 10); // Delay before typing starts
+    this.renderer.setStyle(this.typedText, 'width', '350px');
   }
 }

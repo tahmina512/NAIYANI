@@ -7,8 +7,8 @@ import { SigninComponent } from './signin/signin.component';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
-import { LogoComponent } from './logo/logo.component';
 import { TestingComponent } from './testing/testing.component';
+import { TextAnimationComponent } from './text-animation/text-animation.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -17,8 +17,8 @@ const appRoutes: Routes = [
   { path: 'list', component: DatabaseListComponent },
   { path: 'info', component: DataInfoComponent },
   { path: 'home', component: HomepageComponent },
-  { path: 'logo', component: LogoComponent },
   { path: 'test', component: TestingComponent },
+  { path: 'text', component: TextAnimationComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

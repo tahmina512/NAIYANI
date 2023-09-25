@@ -11,8 +11,8 @@ import { SigninComponent } from './signin/signin.component';
 import { DatabaseButtonComponent } from './database-button/database-button.component';
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
-import { LogoComponent } from './logo/logo.component';
 import { TestingComponent } from './testing/testing.component';
+import { TextAnimationComponent } from './text-animation/text-animation.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +23,8 @@ import { TestingComponent } from './testing/testing.component';
     DatabaseButtonComponent,
     DatabaseListComponent,
     DataInfoComponent,
-    LogoComponent,
     TestingComponent,
+    TextAnimationComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],

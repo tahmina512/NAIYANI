@@ -1,0 +1,43 @@
+
+.outer-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  width: auto;
+
+}
+
+.container {
+  display: flex;
+  height: 100px;
+
+  width: 350px;
+  align-items: center;
+}
+
+p {
+   font-family: 'Raleway', sans-serif;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
+ /*   opacity: 0; */
+  animation: linearwipe 2s steps(200, end);
+}
+
+@keyframes linearwipe {
+  from {
+    width: 0;
+    /* opacity: 0; */
+  }
+}
