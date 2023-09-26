@@ -6,10 +6,17 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./text-animation.component.scss'],
 })
 export class TextAnimationComponent implements OnInit {
-  showShape: Boolean = false;
+  moveLogo: boolean = false;
+  showDiv: Boolean = false;
   ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.showShape = true;
-    // }, 3000);
+    setTimeout(() => {
+      this.showDiv = true;
+       setTimeout(() => {
+         this.moveLogo = true; // Trigger the move-up animation
+         // setTimeout(() => {
+         //   this.router.navigate(['/signin']);
+         // }, 3000);
+       }, 4000);
+    }, 2000);
   }
 }
