@@ -1,4 +1,6 @@
 
+
+
 .outer-container {
   position: relative;
   display: flex;
@@ -7,31 +9,37 @@
   height: 100vh;
   margin: 0 auto;
   width: auto;
-
 }
-
+// .newShape {
+//   display: flex;
+//   height: 100px;
+//   border: 2px solid;
+//   width: 350px;
+//   background-color: yellow;
+//   align-items: center;
+// }
 .container {
   display: flex;
   height: 100px;
-
+  // border: 3px solid;
   width: 350px;
   align-items: center;
+  // background-color: blue;
 }
-
 p {
-   font-family: 'Raleway', sans-serif;
-  margin-left: 50px;
+
+  margin-left: 55px;
   margin-right: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+  // font-family: "Raleway", sans-serif;
+  font-family: 'ElaineSans-Medium',sans-serif;
+  font-size: 50px;
   letter-spacing: 10px;
-  font-weight: 50px;
   white-space: nowrap;
   overflow: hidden;
   width: 300px;
- /*   opacity: 0; */
+  /*   opacity: 0; */
   animation: linearwipe 2s steps(200, end);
 }
 

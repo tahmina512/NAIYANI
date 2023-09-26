@@ -6,5 +6,10 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
   styleUrls: ['./text-animation.component.scss'],
 })
 export class TextAnimationComponent implements OnInit {
-  ngOnInit(): void {}
+  showShape: Boolean = false;
+  ngOnInit(): void {
+    // setTimeout(() => {
+    //   this.showShape = true;
+    // }, 3000);
+  }
 }
