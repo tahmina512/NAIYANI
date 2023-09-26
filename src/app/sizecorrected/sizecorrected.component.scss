@@ -6,28 +6,28 @@
   height: 100vh;
   margin: 0 auto;
   width: auto;
-
+  background-color: pink;
 }
 .container {
   display: flex;
   height: 128px;
   // border: 3px solid;
-  width:380px;
+  width: 100%;
   align-items: center;
-  background-color: transparent;
+  background-color: yellow;
 }
 p {
   margin-left: 38px;
   margin-right: 15px;
-  margin-top: 45px;
-  margin-bottom: 0px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   // font-family: "Raleway", sans-serif;
   font-family: "ElaineSans-Regular", sans-serif;
   font-size: 55px;
   letter-spacing: 10px;
   white-space: nowrap;
   overflow: hidden;
-  width: 380px;
+  width: 100%;
   /*   opacity: 0; */
   animation: linearwipe 2s steps(200, end);
 }
@@ -40,7 +40,7 @@ p {
 }
 
 .services {
-  background-color: transparent;
+  background-color: green;
   // min-height: 100vh;
   width: 380px;
   height: 128px;
@@ -97,7 +97,6 @@ p {
   width: 380px;
   align-items: center;
   transform: translateY(-128px);
-  /*   background-color:blue; */
 }
 .services .content .box1 .inner1 {
   padding: 50px;
@@ -166,4 +165,53 @@ p {
   animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
   transform-origin: center bottom;
 }
+@media screen and (max-width: 768px) {
+  .container {
+    width: 300px;
+  }
+  p {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 40px;
+    width: 300px;
+  }
+  .services {
+    width: 300px;
+  }
 
+  .services .content .box {
+    width: 300px;
+  }
+
+  .services .content .box .inner {
+    width: 300px;
+  }
+
+  .services .content .box1 {
+    height: 128px;
+    width: 300px;
+  }
+  .services .content .box1 .inner1 {
+    width: 300px;
+  }
+  .move-up {
+    animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
+    transform-origin: center bottom;
+  }
+}
+@keyframes moveUpAnimationLandScape
+{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px); /* Adjust the final position as needed */
+  }
+}
+@media screen and (orientation: landscape) {
+ 
+  .move-up {
+   animation: moveUpAnimationLandScape 2s ease forwards; /* Slow upward animation */
+    transform-origin: center bottom;
+}
+}
