@@ -6,28 +6,28 @@
   height: 100vh;
   margin: 0 auto;
   width: auto;
-}
 
+}
 .container {
   display: flex;
-  height: 100px;
+  height: 128px;
   // border: 3px solid;
-  width: 350px;
+  width:380px;
   align-items: center;
   background-color: transparent;
 }
 p {
-  margin-left: 30px;
-  margin-right: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-left: 38px;
+  margin-right: 15px;
+  margin-top: 45px;
+  margin-bottom: 0px;
   // font-family: "Raleway", sans-serif;
   font-family: "ElaineSans-Regular", sans-serif;
-  font-size: 50px;
+  font-size: 55px;
   letter-spacing: 10px;
   white-space: nowrap;
   overflow: hidden;
-  width: 300px;
+  width: 380px;
   /*   opacity: 0; */
   animation: linearwipe 2s steps(200, end);
 }
@@ -42,10 +42,9 @@ p {
 .services {
   background-color: transparent;
   // min-height: 100vh;
-  width: 350px;
-  height: 100px;
+  width: 380px;
+  height: 128px;
   align-items: center;
-  // margin-top: -100px;
 }
 
 .services .content .box {
@@ -54,14 +53,14 @@ p {
   padding: 15px; */
   float: right;
   display: flex;
-  height: 100px;
-  width: 350px;
+  height: 128px;
+  width: 380px;
   align-items: center;
 }
 
 .services .content .box .inner {
-  height: 100px;
-  width: 350px;
+  height: 128px;
+  width: 380px;
   position: relative;
 }
 
@@ -94,17 +93,17 @@ p {
 
 .services .content .box1 {
   float: right;
-  height: 100px;
-  width: 350px;
+  height: 128px;
+  width: 380px;
   align-items: center;
-  transform: translateY(-100px);
+  transform: translateY(-128px);
   /*   background-color:blue; */
 }
 .services .content .box1 .inner1 {
   padding: 50px;
   position: relative;
-  height: 100px;
-  width: 350px;
+  height: 128px;
+  width: 380px;
 }
 .services .content .box1 .inner1::before {
   content: "";
@@ -151,7 +150,7 @@ p {
     border-color: transparent;
   }
   100% {
-    height: 100px;
+    height: 128px;
     border-color: black;
   }
 }
@@ -167,3 +166,4 @@ p {
   animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
   transform-origin: center bottom;
 }
+

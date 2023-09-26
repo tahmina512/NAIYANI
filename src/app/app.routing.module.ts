@@ -9,6 +9,7 @@ import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { TestingComponent } from './testing/testing.component';
 import { TextAnimationComponent } from './text-animation/text-animation.component';
+import { SIZECORRECTEDComponent } from './sizecorrected/sizecorrected.component';
 
 const appRoutes: Routes = [
   { path: '', component: LandingpageComponent },
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'test', component: TestingComponent },
   { path: 'text', component: TextAnimationComponent },
+  { path: 'text1', component: SIZECORRECTEDComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

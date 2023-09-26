@@ -13,6 +13,7 @@ import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { TestingComponent } from './testing/testing.component';
 import { TextAnimationComponent } from './text-animation/text-animation.component';
+import { SIZECORRECTEDComponent } from './sizecorrected/sizecorrected.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { TextAnimationComponent } from './text-animation/text-animation.componen
     DataInfoComponent,
     TestingComponent,
     TextAnimationComponent,
+    SIZECORRECTEDComponent
   ],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
