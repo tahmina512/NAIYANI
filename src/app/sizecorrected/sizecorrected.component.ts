@@ -12,7 +12,9 @@ export class SIZECORRECTEDComponent {
     setTimeout(() => {
       this.showDiv = true;
       setTimeout(() => {
+        console.log(this.moveLogo);
         this.moveLogo = true;
+         console.log(this.moveLogo);
       }, 4000);
     }, 2000);
   }

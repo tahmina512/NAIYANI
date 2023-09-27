@@ -6,42 +6,12 @@
   height: 100vh;
   margin: 0 auto;
   width: auto;
-  // background-color: pink;
-}
-
-.services {
-  // background-color: green;
-  width: 380px;
-  height: 128px;
-}
-.container {
-  // display: flex;
-  height: 128px;
-  // border: 3px solid;
-  width: 100%;
-  // background-color: yellow;
-}
-.moveLines {
-  margin-top: -128px;
-}
-.move-up {
-  animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
-  transform-origin: center bottom;
-}
-@keyframes moveUpAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-128px);
-  }
 }
 
 p {
   margin-left: 32px;
   margin-right: 15px;
   margin-top: 20px;
-  // font-family: "Raleway", sans-serif;
   font-family: "ElaineSans-Regular", sans-serif;
   font-size: 58px;
   letter-spacing: 10px;
@@ -51,25 +21,15 @@ p {
   animation: linearwipe 2s steps(200, end);
 }
 
-@keyframes linearwipe {
-  from {
-    width: 0;
-  }
+.services {
+  width: 380px;
+  height: 128px;
 }
-.gradient {
-  animation: change-color 2s linear forwards;
+.container {
+  height: 128px;
+
+  width: 100%;
 }
-
-@keyframes change-color {
-  0% {
-    color: rgb(220, 220, 220);
-  }
-
-  100% {
-    color: black;
-  }
-}
-
 .services .content .box {
   display: flex;
   height: 128px;
@@ -107,13 +67,13 @@ p {
 }
 
 .services .content .box1 {
+  display: flex;
   height: 128px;
   width: 380px;
   transform: translateY(-128px);
 }
 
 .services .content .box1 .inner1 {
-  padding: 50px;
   position: relative;
   height: 128px;
   width: 380px;
@@ -125,7 +85,6 @@ p {
   right: 0;
   bottom: 0;
   width: 0;
-  box-sizing: border-box;
   height: 0;
   border-right: 2px solid transparent;
   transition: 0.8s ease;
@@ -138,13 +97,19 @@ p {
   left: 0;
   top: 0;
   width: 0;
-  box-sizing: border-box;
   height: 0;
   border-left: 2px solid transparent;
   background-color: transparent;
 
   animation: expandBorder2 2s forwards;
   animation-delay: 2s;
+}
+.move-up {
+  animation: moveUpAnimation 2s ease forwards;
+  transform-origin: center bottom;
+}
+.moveLines {
+  margin-top: -128px;
 }
 @keyframes expandBorder1 {
   0% {
@@ -169,14 +134,39 @@ p {
   }
 }
 
+@keyframes linearwipe {
+  from {
+    width: 0;
+  }
+}
+.gradient {
+  animation: change-color 2s linear forwards;
+}
+
+@keyframes change-color {
+  0% {
+    color: rgb(220, 220, 220);
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+@keyframes moveUpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-128px);
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     width: 300px;
     height: 100px;
   }
-  .moveLines {
-    margin-top: -100px;
-  }
+
   p {
     margin-left: 25px;
     margin-right: 25px;
@@ -187,7 +177,9 @@ p {
     width: 300px;
     height: 100px;
   }
-
+  .moveLines {
+    margin-top: -100px;
+  }
   .services .content .box {
     width: 300px;
     height: 100px;
@@ -216,11 +208,6 @@ p {
     animation: expandBorderLine2 2s forwards;
     animation-delay: 2s;
   }
-
-  .move-up {
-    animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
-    transform-origin: center bottom;
-  }
 }
 
 @keyframes expandBorderLine2 {
@@ -236,7 +223,7 @@ p {
 
 @media screen and (orientation: landscape) {
   .move-up {
-    animation: moveUpAnimationLandScape 2s ease forwards; /* Slow upward animation */
+    animation: moveUpAnimationLandScape 2s ease forwards;
     transform-origin: center bottom;
   }
 }
@@ -246,6 +233,6 @@ p {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100px); /* Adjust the final position as needed */
+    transform: translateY(-100px);
   }
 }
