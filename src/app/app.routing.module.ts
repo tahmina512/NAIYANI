@@ -12,7 +12,7 @@ import { TextAnimationComponent } from './text-animation/text-animation.componen
 import { SIZECORRECTEDComponent } from './sizecorrected/sizecorrected.component';
 
 const appRoutes: Routes = [
-  { path: '', component: LandingpageComponent },
+  { path: '', component: SIZECORRECTEDComponent },
   { path: 'signin', component: SigninComponent },
   { path: 'database-btn', component: DatabaseButtonComponent },
   { path: 'list', component: DatabaseListComponent },
@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
   { path: 'test', component: TestingComponent },
   { path: 'text', component: TextAnimationComponent },
-  { path: 'text1', component: SIZECORRECTEDComponent },
+  { path: 'land', component: LandingpageComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

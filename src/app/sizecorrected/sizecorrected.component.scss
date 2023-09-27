@@ -12,17 +12,17 @@
 .services {
   // background-color: green;
   width: 380px;
-  height: 130px;
+  height: 128px;
 }
 .container {
   // display: flex;
-  height: 130px;
+  height: 128px;
   // border: 3px solid;
   width: 100%;
   // background-color: yellow;
 }
 .moveLines {
-  margin-top: -130px;
+  margin-top: -128px;
 }
 .move-up {
   animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
@@ -33,18 +33,17 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-130px);
+    transform: translateY(-128px);
   }
 }
 
 p {
-  margin-left: 38px;
+  margin-left: 32px;
   margin-right: 15px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 20px;
   // font-family: "Raleway", sans-serif;
   font-family: "ElaineSans-Regular", sans-serif;
-  font-size: 55px;
+  font-size: 58px;
   letter-spacing: 10px;
   white-space: nowrap;
   overflow: hidden;
@@ -73,13 +72,13 @@ p {
 
 .services .content .box {
   display: flex;
-  height: 130px;
+  height: 128px;
   width: 380px;
   align-items: center;
 }
 
 .services .content .box .inner {
-  height: 130px;
+  height: 128px;
   width: 380px;
   position: relative;
 }
@@ -108,15 +107,15 @@ p {
 }
 
 .services .content .box1 {
-  height: 130px;
+  height: 128px;
   width: 380px;
-  transform: translateY(-130px);
+  transform: translateY(-128px);
 }
 
 .services .content .box1 .inner1 {
   padding: 50px;
   position: relative;
-  height: 130px;
+  height: 128px;
   width: 380px;
 }
 
@@ -165,7 +164,7 @@ p {
     border-color: transparent;
   }
   100% {
-    height: 130px;
+    height: 128px;
     border-color: black;
   }
 }
