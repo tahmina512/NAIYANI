@@ -6,16 +6,37 @@
   height: 100vh;
   margin: 0 auto;
   width: auto;
-  background-color: pink;
+  // background-color: pink;
+}
+
+.services {
+  // background-color: green;
+  width: 380px;
+  height: 130px;
 }
 .container {
-  display: flex;
-  height: 128px;
+  // display: flex;
+  height: 130px;
   // border: 3px solid;
   width: 100%;
-  align-items: center;
-  background-color: yellow;
+  // background-color: yellow;
 }
+.moveLines {
+  margin-top: -130px;
+}
+.move-up {
+  animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
+  transform-origin: center bottom;
+}
+@keyframes moveUpAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-130px);
+  }
+}
+
 p {
   margin-left: 38px;
   margin-right: 15px;
@@ -28,38 +49,37 @@ p {
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
-  /*   opacity: 0; */
   animation: linearwipe 2s steps(200, end);
 }
 
 @keyframes linearwipe {
   from {
     width: 0;
-    /* opacity: 0; */
+  }
+}
+.gradient {
+  animation: change-color 2s linear forwards;
+}
+
+@keyframes change-color {
+  0% {
+    color: rgb(220, 220, 220);
+  }
+
+  100% {
+    color: black;
   }
 }
 
-.services {
-  background-color: green;
-  // min-height: 100vh;
-  width: 380px;
-  height: 128px;
-  align-items: center;
-}
-
 .services .content .box {
-  /* width: 200px;
-  float: left;
-  padding: 15px; */
-  float: right;
   display: flex;
-  height: 128px;
+  height: 130px;
   width: 380px;
   align-items: center;
 }
 
 .services .content .box .inner {
-  height: 128px;
+  height: 130px;
   width: 380px;
   position: relative;
 }
@@ -70,8 +90,6 @@ p {
   left: 0;
   bottom: 0;
   width: 0;
-  box-sizing: border-box;
-  height: 0;
   border-bottom: 2px solid transparent;
   transition: 0.8s ease;
   animation: expandBorder1 2s forwards;
@@ -83,8 +101,6 @@ p {
   right: 0;
   top: 0;
   width: 0;
-  box-sizing: border-box;
-  height: 0;
   border-top: 2px solid transparent;
   background-color: transparent;
 
@@ -92,18 +108,18 @@ p {
 }
 
 .services .content .box1 {
-  float: right;
-  height: 128px;
+  height: 130px;
   width: 380px;
-  align-items: center;
-  transform: translateY(-128px);
+  transform: translateY(-130px);
 }
+
 .services .content .box1 .inner1 {
   padding: 50px;
   position: relative;
-  height: 128px;
+  height: 130px;
   width: 380px;
 }
+
 .services .content .box1 .inner1::before {
   content: "";
   position: absolute;
@@ -149,25 +165,18 @@ p {
     border-color: transparent;
   }
   100% {
-    height: 128px;
+    height: 130px;
     border-color: black;
   }
 }
-@keyframes moveUpAnimation {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-165px); /* Adjust the final position as needed */
-  }
-}
-.move-up {
-  animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
-  transform-origin: center bottom;
-}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 300px;
+    height: 100px;
+  }
+  .moveLines {
+    margin-top: -100px;
   }
   p {
     margin-left: 25px;
@@ -177,41 +186,67 @@ p {
   }
   .services {
     width: 300px;
+    height: 100px;
   }
 
   .services .content .box {
     width: 300px;
+    height: 100px;
   }
 
   .services .content .box .inner {
     width: 300px;
+    height: 100px;
   }
 
   .services .content .box1 {
-    height: 128px;
     width: 300px;
+    height: 100px;
+    transform: translateY(-100px);
   }
   .services .content .box1 .inner1 {
     width: 300px;
+    height: 100px;
   }
+
+  .services .content .box1 .inner1::before {
+    animation: expandBorderLine2 2s forwards;
+    animation-delay: 2s;
+  }
+  .services .content .box1 .inner1::after {
+    animation: expandBorderLine2 2s forwards;
+    animation-delay: 2s;
+  }
+
   .move-up {
     animation: moveUpAnimation 2s ease forwards; /* Slow upward animation */
     transform-origin: center bottom;
   }
 }
-@keyframes moveUpAnimationLandScape
-{
+
+@keyframes expandBorderLine2 {
+  0% {
+    height: 0;
+    border-color: transparent;
+  }
+  100% {
+    height: 100px;
+    border-color: black;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .move-up {
+    animation: moveUpAnimationLandScape 2s ease forwards; /* Slow upward animation */
+    transform-origin: center bottom;
+  }
+}
+
+@keyframes moveUpAnimationLandScape {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-100px); /* Adjust the final position as needed */
   }
-}
-@media screen and (orientation: landscape) {
- 
-  .move-up {
-   animation: moveUpAnimationLandScape 2s ease forwards; /* Slow upward animation */
-    transform-origin: center bottom;
-}
 }
