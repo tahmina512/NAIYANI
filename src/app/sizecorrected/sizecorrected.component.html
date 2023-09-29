@@ -1,7 +1,6 @@
 <div class="outer-container">
-  <div class="services" [class.move-up]="moveLogo">
+  <div class="services" [ngClass]="{ 'move-up': moveLogo }">
     <div class="container">
-      <!-- <p >NAIYANI</p> -->
       <p>
         <span class="gradient">N</span>
         <span class="gradient">A</span>
@@ -12,17 +11,37 @@
         <span class="gradient">I</span>
       </p>
     </div>
-    <div class="moveLines" *ngIf="showDiv">
-      <div class="content">
-        <div class="box">
-          <div class="inner"></div>
+
+    <div class="position" *ngIf="showIcons">
+      <div>
+        <div>
+          <button class="gradient-button username-button">
+            <i class="fa-solid fa-user fa-2xl"></i>
+          </button>
         </div>
-        <div class="content">
-          <div class="box1">
-            <div class="inner1"></div>
-          </div>
+        <div>
+          <button class="gradient-button password-button">
+            <i class="fas fa-key fa-2xl"></i>
+          </button>
+        </div>
+        <div>
+          <button class="arrow-button">
+            <i class="fa fa-arrow-right fa-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="moveLines" *ngIf="showDiv">
+      <div class="box">
+        <div class="inner"></div>
+
+        <div class="box1">
+          <div class="inner1"></div>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="filter-icon-container" *ngIf="showIcons">
+  <i class="fa fa-sliders fa-flip-both fa-2x icon-with-border"></i>
 </div>

@@ -1,13 +1,51 @@
+@import "../signin/signin.component.scss";
+
 .outer-container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0 auto;
   width: auto;
 }
+.position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  height: 200px;
+}
+.filter-icon-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 
+  .icon-with-border {
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 7px 5px;
+  }
+  animation: appearButtons 3s ease forwards;
+}
+.filter-icon-container:hover {
+  color: gray;
+}
+
+.services {
+  width: 380px;
+  height: 128px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 128px;
+  background-color: transparent;
+  width: 100%;
+  border: 2px solid transparent;
+}
 p {
   margin-left: 32px;
   margin-right: 15px;
@@ -20,30 +58,22 @@ p {
   width: 100%;
   animation: linearwipe 2s steps(200, end);
 }
-
-.services {
-  width: 380px;
-  height: 128px;
+.show-border {
+  border-color: black;
 }
-.container {
-  height: 128px;
-
-  width: 100%;
-}
-.services .content .box {
-  display: flex;
+.services .box {
   height: 128px;
   width: 380px;
   align-items: center;
 }
 
-.services .content .box .inner {
+.services .box .inner {
   height: 128px;
   width: 380px;
   position: relative;
 }
 
-.services .content .box .inner::before {
+.services .box .inner::before {
   content: "";
   position: absolute;
   left: 0;
@@ -51,10 +81,11 @@ p {
   width: 0;
   border-bottom: 2px solid transparent;
   transition: 0.8s ease;
+
   animation: expandBorder1 2s forwards;
 }
 
-.services .content .box .inner::after {
+.services .box .inner::after {
   content: "";
   position: absolute;
   right: 0;
@@ -66,20 +97,20 @@ p {
   animation: expandBorder1 2s forwards;
 }
 
-.services .content .box1 {
+.services .box1 {
   display: flex;
   height: 128px;
   width: 380px;
   transform: translateY(-128px);
 }
 
-.services .content .box1 .inner1 {
+.services .box1 .inner1 {
   position: relative;
   height: 128px;
   width: 380px;
 }
 
-.services .content .box1 .inner1::before {
+.services .box1 .inner1::before {
   content: "";
   position: absolute;
   right: 0;
@@ -91,7 +122,7 @@ p {
   animation: expandBorder2 2s forwards;
   animation-delay: 2s;
 }
-.services .content .box1 .inner1::after {
+.services .box1 .inner1::after {
   content: "";
   position: absolute;
   left: 0;
@@ -161,12 +192,63 @@ p {
     transform: translateY(-128px);
   }
 }
+
+.buttons-container {
+  text-align: center;
+  position: absolute;
+}
+
+.gradient-button {
+  padding: 15px 60px;
+  border: solid 2px;
+  border-radius: 25px;
+  background-color: white;
+  // color: black;
+  // font-size: 11px;
+  cursor: pointer;
+  margin-top: 10px;
+  opacity: 0;
+}
+
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.username-button {
+  animation: appearButtons 3s ease forwards;
+}
+
+.password-button {
+  animation: appearButtons 3s ease forwards;
+}
+.arrow-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border: solid 1px;
+  // font-size: 11px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 33.33%;
+
+  opacity: 0;
+  animation: appearButtons 3s ease forwards;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 300px;
     height: 100px;
   }
-
+  .position {
+    width: 300px;
+  }
   p {
     margin-left: 25px;
     margin-right: 25px;
@@ -174,50 +256,50 @@ p {
     width: 300px;
   }
   .services {
+    // position: relative;
     width: 300px;
     height: 100px;
   }
   .moveLines {
     margin-top: -100px;
   }
-  .services .content .box {
+  .services .box {
     width: 300px;
     height: 100px;
   }
 
-  .services .content .box .inner {
+  .services .box .inner {
     width: 300px;
     height: 100px;
   }
 
-  .services .content .box1 {
+  .services .box1 {
     width: 300px;
     height: 100px;
     transform: translateY(-100px);
   }
-  .services .content .box1 .inner1 {
+  .services .box1 .inner1 {
     width: 300px;
     height: 100px;
   }
 
-  .services .content .box1 .inner1::before {
+  .services .box1 .inner1::before {
     animation: expandBorderLine2 2s forwards;
     animation-delay: 2s;
   }
-  .services .content .box1 .inner1::after {
+  .services .box1 .inner1::after {
     animation: expandBorderLine2 2s forwards;
     animation-delay: 2s;
   }
-}
-
-@keyframes expandBorderLine2 {
-  0% {
-    height: 0;
-    border-color: transparent;
-  }
-  100% {
-    height: 100px;
-    border-color: black;
+  @keyframes expandBorderLine2 {
+    0% {
+      height: 0;
+      border-color: transparent;
+    }
+    100% {
+      height: 100px;
+      border-color: black;
+    }
   }
 }
 
@@ -226,13 +308,13 @@ p {
     animation: moveUpAnimationLandScape 2s ease forwards;
     transform-origin: center bottom;
   }
-}
 
-@keyframes moveUpAnimationLandScape {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100px);
+  @keyframes moveUpAnimationLandScape {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100px);
+    }
   }
 }
