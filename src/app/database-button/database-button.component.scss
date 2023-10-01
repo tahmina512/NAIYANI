@@ -1,30 +1,26 @@
-@import "src/app/shared/variables.scss";
 // @import "@fontsource/raleway/700.css";
-@keyframes appearButtons {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .text-position {
   position: absolute;
   top: 70px; /* Adjust the top position as needed */
   left: 60px; /* Adjust the left position as needed */
-  font-family: "Raleway";
-  font-size: 24px; /* Adjust the font size as needed */
+  // font-family: "Raleway";
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 28px; /* Adjust the font size as needed */
 
   letter-spacing: 1px;
   animation: appearButtons 3s ease forwards;
 }
 .arrow-position {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 20px;
   left: 15px;
   cursor: pointer;
   border-radius: 50%;
-  // align-items: center;
+  // text-align: center;
   width: 45px;
   height: 45px;
   background-color: white;
@@ -42,33 +38,47 @@
   padding: 7px 5px;
   background-color: white;
 }
-
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .banner-container {
-  @each $property, $value in $flex-center-styles {
-    #{$property}: $value;
-    height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-  .banner-button {
-    font-family: "Raleway";
-    font-size: 24px;
-    // letter-spacing: 2px;
-    font-weight: bolder;
-    padding: 8px 45px;
-    background: white;
-    // box-shadow: 4px 4px black;
-    border: 2px solid;
-    border-radius: 25px;
-    white-space: normal; /* Allow text to wrap */
-    cursor: pointer;
-    text-align: center;
-  }
-
-  // Add media query for smaller screens
-  // @media (max-width: 768px) {
-  //   .banner-button {
-  //     font-size: 10px;
-  //   }
-  // }
+  height: 100vh;
+  //  background-color: red;
   animation: appearButtons 3s ease forwards;
 }
+.banner-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 0;
+  // box-shadow: 4px 4px black;
+   text-align:center;
+  height: 60px;
+  width: 220px;
+  border: 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Calibri-Bold", sans-serif;
+  line-height: 0.75em;
+  // font-family: "Times New Roman", Times, serif;
+  font-size: 32px;
+  white-space: normal; /* Allow text to wrap */
+}
+
+// @media screen and (max-width: 768px) {
+//   .banner-button {
+//     font-family: "Calibri-Bold", sans-serif;
+//     font-size: 28px;
+//   }
+// }

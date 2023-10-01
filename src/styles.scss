@@ -4,3 +4,10 @@
   font-family: "ElaineSans-Regular";
   src: url("/assets/fonts/ElaineSans-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Calibri-Bold";
+  font-style: normal;
+  padding: 0;
+  src: url("/assets/calibri-font/calibrib.ttf") format("truetype"),
+    url("/assets/calibri-font/calibrib.ttf") format("woff"); /* Modern Browsers */
+}

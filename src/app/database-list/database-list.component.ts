@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 export class DatabaseListComponent implements OnInit {
   constructor(private router: Router) {}
   ngOnInit(): void {
-    setTimeout(() => {
-      this.router.navigate(['/info']);
-    }, 6000);
+    // setTimeout(() => {
+    //   this.router.navigate(['/info']);
+    // }, 6000);
   }
 }

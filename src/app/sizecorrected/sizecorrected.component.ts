@@ -28,8 +28,8 @@ export class SIZECORRECTEDComponent implements OnInit {
       const myDiv = document.querySelector('.container') as HTMLElement;
       myDiv.classList.add('show-border');
     }, 7000); // 5000 milliseconds = 5 seconds
-    //   setTimeout(() => {
-    //     this.router.navigate(['/database-btn']);
-    //   }, 13000);
+      setTimeout(() => {
+        this.router.navigate(['/database-btn']);
+      }, 13000);
   }
 }
