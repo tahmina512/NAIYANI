@@ -6,10 +6,10 @@
   left: 60px; /* Adjust the left position as needed */
   // font-family: "Raleway";
   font-family: "Calibri-Bold", sans-serif;
-  font-size: 28px; /* Adjust the font size as needed */
+  font-size: 26px; /* Adjust the font size as needed */
 
   letter-spacing: 1px;
-  animation: appearButtons 3s ease forwards;
+  animation: appearButtons 2.5s ease forwards;
 }
 .arrow-position {
   position: absolute;
@@ -25,14 +25,14 @@
   height: 45px;
   background-color: white;
   border: solid 2px;
-  animation: appearButtons 3s ease forwards;
+  animation: appearButtons 2.5s ease forwards;
 }
 .filter-icon-container {
   position: absolute;
   top: 20px;
   right: 15px;
   cursor: pointer;
-  animation: appearButtons 3s ease forwards;
+  animation: appearButtons 2.5s ease forwards;
   border-radius: 15px;
   border: 2px solid black;
   padding: 7px 5px;
@@ -70,15 +70,20 @@
   border-radius: 50px;
   cursor: pointer;
   font-family: "Calibri-Bold", sans-serif;
-  line-height: 0.75em;
+  line-height:1;
   // font-family: "Times New Roman", Times, serif;
-  font-size: 32px;
+  font-size: 28px;
   white-space: normal; /* Allow text to wrap */
 }
 
-// @media screen and (max-width: 768px) {
-//   .banner-button {
-//     font-family: "Calibri-Bold", sans-serif;
-//     font-size: 28px;
-//   }
-// }
+
+@media screen and (max-width: 768px) {
+
+  .text-position {
+    font-weight: 24px;
+  }
+  .banner-button {
+    font-size: 26px;
+      line-height:1;
+  }
+}

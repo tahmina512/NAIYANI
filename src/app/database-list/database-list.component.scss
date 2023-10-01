@@ -12,13 +12,18 @@
   position: absolute;
   top: 70px; /* Adjust the top position as needed */
   left: 60px; /* Adjust the left position as needed */
-  font-family: "raleway", sans-serif;
-  font-size: 24px; /* Adjust the font size as needed */
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 26px; /* Adjust the font size as needed */
   letter-spacing: 1px;
-  animation: appearButtons 3s ease forwards;
+  // font-family: "raleway", sans-serif;
+  // letter-spacing: 1px;
+  animation: appearButtons 2.5s ease forwards;
 }
 .arrow-position {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 20px;
   left: 15px;
   cursor: pointer;
@@ -35,42 +40,46 @@
   top: 20px;
   right: 15px;
   cursor: pointer;
-  animation: appearButtons 3s ease forwards;
+  animation: appearButtons 2.5s ease forwards;
   border-radius: 15px;
   border: 2px solid black;
   padding: 7px 5px;
   background-color: white;
 }
 .banner-container {
-  @each $property, $value in $flex-center-styles {
-    #{$property}: $value;
-    height: 45vh;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 
   .banner-button {
-    position: absolute;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
-    // letter-spacing: 2px;
-    font-weight: bold;
-    padding: 7px 40px;
-    background: white;
+    background-color: white;
+    margin-top: 120px;
+    padding: 0;
     // box-shadow: 4px 4px black;
-    border: 2px solid;
-    border-radius: 25px;
-    white-space: normal; /* Allow text to wrap */
-    cursor: pointer;
     text-align: center;
+    height: 60px;
+    width: 220px;
+    border: 2px solid;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Calibri-Bold", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    // font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    white-space: normal; /* Allow text to wrap */
     // margin-bottom: 10px;
   }
-  //  Add media query for smaller screens
 
-  animation: appearButtons 3s ease forwards;
+  animation: appearButtons 2.5s ease forwards;
 }
-
 .grid-container {
+  // background-color: aqua;
+  margin-top: 210px;
   display: grid;
-  // position: absolute;
+  position: absolute;
   grid-template-columns: repeat(5, 1fr); /* 5 columns */
   grid-template-rows: repeat(3, 1fr); /* 3 rows */
   row-gap: 30px;
@@ -87,7 +96,8 @@
   white-space: normal;
   word-wrap: break-word;
   // font-family: "Raleway", sans-serif;
-  font-size: 16px; /* Adjust the font size as needed */
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 20px; /* Adjust the font size as needed */
   font-weight: bold;
   padding: 20px 15px;
   //  width: fit-content;
@@ -99,7 +109,18 @@
   text-align: center;
   font-weight: bold;
 }
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
+  .text-position {
+    font-weight: 24px;
+  }
+  .banner-container {
+    height: 145vh;
+  }
+  .banner-button {
+    font-size: 26px;
+    line-height: 1;
+  }
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
     margin-left: 10px; /* Adjust margin for smaller screens */
@@ -108,7 +129,14 @@
   }
 
   .grid-button {
-    font-size: 14px; /* Decrease font size for smaller screens */
-    padding: 15px 10px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
+    padding: 12px 8px; /* Adjust padding for smaller screens */
+    height: 80px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1180px) {
+  .banner-container {
+    height: 250vh;
   }
 }
