@@ -51,7 +51,6 @@ p {
   margin-right: 15px;
   margin-top: 20px;
   font-family: "ElaineSans-Regular", sans-serif;
-  // font-weight: bold;
   font-size: 58px;
   letter-spacing: 10px;
   white-space: nowrap;
@@ -82,8 +81,7 @@ p {
   width: 0;
   border-bottom: 2px solid transparent;
   transition: 0.8s ease;
-
-  animation: expandBorder1 2s forwards;
+  animation: expandBorder1 2.72s forwards;
 }
 
 .services .box .inner::after {
@@ -95,7 +93,7 @@ p {
   border-top: 2px solid transparent;
   background-color: transparent;
 
-  animation: expandBorder1 2s forwards;
+  animation: expandBorder1 2.72s forwards;
 }
 
 .services .box1 {
@@ -120,8 +118,8 @@ p {
   height: 0;
   border-right: 2px solid transparent;
   transition: 0.8s ease;
-  animation: expandBorder2 2s forwards;
-  animation-delay: 2s;
+  animation: expandBorder2 2.72s forwards;
+  animation-delay: 2.72s;
 }
 .services .box1 .inner1::after {
   content: "";
@@ -133,8 +131,8 @@ p {
   border-left: 2px solid transparent;
   background-color: transparent;
 
-  animation: expandBorder2 2s forwards;
-  animation-delay: 2s;
+  animation: expandBorder2 2.72s forwards;
+  animation-delay: 2.72s;
 }
 .move-up {
   animation: moveUpAnimation 2s ease forwards;
@@ -204,8 +202,6 @@ p {
   border: solid 2px;
   border-radius: 25px;
   background-color: white;
-  // color: black;
-  // font-size: 11px;
   cursor: pointer;
   margin-top: 10px;
   opacity: 0;
@@ -233,7 +229,6 @@ p {
   height: 50px;
   background-color: white;
   border: solid 1px;
-  // font-size: 11px;
   cursor: pointer;
   margin-top: 10px;
   margin-left: 33.33%;
@@ -258,7 +253,6 @@ p {
     width: 300px;
   }
   .services {
-    // position: relative;
     width: 300px;
     height: 100px;
   }
@@ -286,12 +280,12 @@ p {
   }
 
   .services .box1 .inner1::before {
-    animation: expandBorderLine2 2s forwards;
-    animation-delay: 2s;
+    animation: expandBorderLine2 2.72s forwards;
+    animation-delay: 2.72s;
   }
   .services .box1 .inner1::after {
-    animation: expandBorderLine2 2s forwards;
-    animation-delay: 2s;
+    animation: expandBorderLine2 2.72s forwards;
+    animation-delay: 2.72s;
   }
   @keyframes expandBorderLine2 {
     0% {

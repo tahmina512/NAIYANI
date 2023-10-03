@@ -11,7 +11,6 @@ export class SIZECORRECTEDComponent implements OnInit {
   moveLogo: boolean = false;
   showDiv: Boolean = false;
   showIcons: Boolean = false;
-  // showBorder:Boolean=false;
   ngOnInit(): void {
     setTimeout(() => {
       this.showDiv = true;
@@ -19,17 +18,16 @@ export class SIZECORRECTEDComponent implements OnInit {
         this.moveLogo = true;
         setTimeout(() => {
           this.showDiv = false;
-          // this.showBorder=true;
           this.showIcons = true;
         }, 2000);
-      }, 4000);
+      }, 5200);
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;
       myDiv.classList.add('show-border');
-    }, 7000); // 5000 milliseconds = 5 seconds
-      setTimeout(() => {
-        this.router.navigate(['/database-btn']);
-      }, 13000);
+    }, 7000); 
+    setTimeout(() => {
+      this.router.navigate(['/database-btn']);
+    }, 13000);
   }
 }

@@ -3,9 +3,6 @@
   text-align: center;
   position: absolute;
   background-color: orange;
-
-  // margin-left: -268px;
-  // margin-top: -30px;
 }
 
 .gradient-button {
@@ -13,14 +10,10 @@
   border: solid 2px;
   border-radius: 25px;
   background-color: white;
-  // color: black;
-  // font-size: 11px;
   cursor: pointer;
   margin-top: 10px;
-  opacity: 0; /* Initially hide the buttons */
+  opacity: 0;
 }
-
-/* Animation for username button */
 @keyframes appearButtons {
   0% {
     opacity: 0;
@@ -32,40 +25,21 @@
 
 .username-button {
   animation: appearButtons 3s ease forwards;
-  // animation-delay: 1s; /* Delay the appearance of username button after logo */
 }
 
 .password-button {
   animation: appearButtons 3s ease forwards;
-  // animation-delay: 1s; /* Delay the appearance of password button after logo */
 }
 .arrow-button {
-  // padding: 10px 45px;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   background-color: white;
   border: solid 1px;
-  // font-size: 11px;
   cursor: pointer;
   margin-top: 10px;
   margin-left: 33.33%;
-
-  opacity: 0; /* Initially hide the buttons */
+  opacity: 0; 
   animation: appearButtons 3s ease forwards;
-  // animation-delay: 1s; /* Delay the appearance of password button after logo */
-}
 
-// @media (max-width: 480px) {
-//   .gradient-button {
-//     padding: 15px 130px;
-//       margin-left: -270px;
-//   margin-top: -30px;
-//   }
-// }
-// @media (max-width: 765px) {
-// .gradient-button {
-//   padding: 15px 130px;
-//     margin-left: -270px;
-// margin-top: -30px;
-// }
+}

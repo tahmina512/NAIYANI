@@ -1,13 +1,10 @@
 // @import "@fontsource/raleway/700.css";
-
 .text-position {
   position: absolute;
-  top: 70px; /* Adjust the top position as needed */
-  left: 60px; /* Adjust the left position as needed */
-  // font-family: "Raleway";
+  top: 70px;
+  left: 60px;
   font-family: "Calibri-Bold", sans-serif;
-  font-size: 26px; /* Adjust the font size as needed */
-
+  font-size: 26px;
   letter-spacing: 1px;
   animation: appearButtons 2.5s ease forwards;
 }
@@ -18,34 +15,26 @@
   align-items: center;
   top: 20px;
   left: 15px;
-  cursor: pointer;
   border-radius: 50%;
-  // text-align: center;
   width: 45px;
   height: 45px;
   background-color: white;
   border: solid 2px;
+  cursor: pointer;
   animation: appearButtons 2.5s ease forwards;
 }
 .filter-icon-container {
   position: absolute;
   top: 20px;
   right: 15px;
-  cursor: pointer;
   animation: appearButtons 2.5s ease forwards;
   border-radius: 15px;
   border: 2px solid black;
   padding: 7px 5px;
   background-color: white;
+  cursor: pointer;
 }
-@keyframes appearButtons {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .banner-container {
   display: flex;
   flex-direction: column;
@@ -56,6 +45,14 @@
   //  background-color: red;
   animation: appearButtons 3s ease forwards;
 }
+@keyframes appearButtons {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .banner-button {
   display: flex;
   align-items: center;
@@ -63,27 +60,23 @@
   background-color: white;
   padding: 0;
   // box-shadow: 4px 4px black;
-   text-align:center;
+  text-align: center;
   height: 60px;
   width: 220px;
   border: 2px solid;
   border-radius: 50px;
   cursor: pointer;
   font-family: "Calibri-Bold", sans-serif;
-  line-height:1;
-  // font-family: "Times New Roman", Times, serif;
+  line-height: 1;
   font-size: 28px;
-  white-space: normal; /* Allow text to wrap */
+  white-space: normal;
 }
-
-
 @media screen and (max-width: 768px) {
-
   .text-position {
-    font-weight: 24px;
+    font-size: 24px;
   }
   .banner-button {
     font-size: 26px;
-      line-height:1;
+    // line-height: 1.6;
   }
 }
