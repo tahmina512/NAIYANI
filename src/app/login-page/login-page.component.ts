@@ -3,10 +3,10 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sizecorrected',
-  templateUrl: './sizecorrected.component.html',
-  styleUrls: ['./sizecorrected.component.scss'],
+  templateUrl: './login-page.component.html',
+  styleUrls: ['./login-page.component.scss'],
 })
-export class SIZECORRECTEDComponent implements OnInit {
+export class LOGINPAGEComponent implements OnInit {
   constructor(private router: Router) {}
   moveLogo: boolean = false;
   showDiv: Boolean = false;
@@ -19,7 +19,7 @@ export class SIZECORRECTEDComponent implements OnInit {
         setTimeout(() => {
           this.showDiv = false;
           this.showIcons = true;
-        }, 2500);
+        }, 3000);
       }, 7500);
     }, 2000);
     setTimeout(() => {
