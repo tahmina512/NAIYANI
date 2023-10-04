@@ -19,7 +19,7 @@ export class SIZECORRECTEDComponent implements OnInit {
         setTimeout(() => {
           this.showDiv = false;
           this.showIcons = true;
-        }, 2000);
+        }, 2500);
       }, 7500);
     }, 2000);
     setTimeout(() => {
@@ -28,6 +28,6 @@ export class SIZECORRECTEDComponent implements OnInit {
     }, 9500);
     setTimeout(() => {
       this.router.navigate(['/database-btn']);
-    }, 18500);
+    }, 21000);
   }
 }
