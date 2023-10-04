@@ -8,13 +8,17 @@ import { Router } from '@angular/router';
 })
 export class DatabaseButtonComponent implements OnInit {
   constructor(private router: Router) {}
+
   ngOnInit(): void {
-    setTimeout(() => {
-      this.router.navigate(['/list']);
-    }, 7000);
+    // setTimeout(() => {
+    //   this.router.navigate(['/list']);
+    // }, 7000);
   }
   navigateToSignINPage() {
-    console.log('check');
     this.router.navigate(['']);
+  }
+  navigateToDatabaseListPage()
+  {
+     this.router.navigate(['/list']);
   }
 }

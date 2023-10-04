@@ -23,6 +23,7 @@
   border: solid 2px;
   animation: appearButtons 2.5s ease forwards;
 }
+
 .filter-icon-container {
   position: absolute;
   top: 20px;
@@ -68,6 +69,12 @@
   line-height: 1;
   font-size: 28px;
   white-space: normal;
+}
+.banner-button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.05); /* Optional: Add a scaling effect on hover/focus */
+  outline: none; /* Remove the default focus outline */
 }
 
 @media screen and (max-width: 768px) {
