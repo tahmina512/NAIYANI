@@ -20,18 +20,66 @@
 .filter-icon-container {
   position: absolute;
   top: 20px;
-  right: 20px;
-  cursor: pointer;
-
-  .icon-with-border {
-    border-radius: 15px;
-    border: 1px solid black;
-    padding: 7px 5px;
-  }
+  right: 15px;
   animation: appearButtons 3s ease forwards;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 7px 5px;
+  background-color: white;
+  cursor: pointer;
 }
 .filter-icon-container:hover {
-  color: gray;
+  outline: 1px solid lightslategray;
+}
+
+.filter-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 2.5px;
+  // background-color: #222020;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-30px);
+  transition: opacity 0.3s, transform 0.3s;
+  transform-origin: top center;
+}
+
+.filter-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-dropdown li {
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 10px 15px;
+  font-family: "Calibri-Bold", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.filter-icon-container:hover .filter-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.filter-icon-container:hover .filter-dropdown li {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.filter-dropdown li:hover {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
 }
 
 .services {
@@ -135,7 +183,7 @@ p {
   animation-delay: 2.72s;
 }
 .move-up {
-  animation: moveUpAnimation 2s ease forwards;
+  animation: moveUpAnimation 2.7s ease forwards;
   transform-origin: center bottom;
 }
 .moveLines {
@@ -287,6 +335,7 @@ p {
     animation: expandBorderLine2 2.72s forwards;
     animation-delay: 2.72s;
   }
+
   @keyframes expandBorderLine2 {
     0% {
       height: 0;
@@ -301,7 +350,7 @@ p {
 
 @media screen and (orientation: landscape) {
   .move-up {
-    animation: moveUpAnimationLandScape 2s ease forwards;
+    animation: moveUpAnimationLandScape 2.7s ease forwards;
     transform-origin: center bottom;
   }
 

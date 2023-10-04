@@ -20,14 +20,14 @@ export class SIZECORRECTEDComponent implements OnInit {
           this.showDiv = false;
           this.showIcons = true;
         }, 2000);
-      }, 5200);
+      }, 7500);
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;
       myDiv.classList.add('show-border');
-    }, 7000); 
+    }, 9500);
     setTimeout(() => {
       this.router.navigate(['/database-btn']);
-    }, 13000);
+    }, 18500);
   }
 }

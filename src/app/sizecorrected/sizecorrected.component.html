@@ -42,6 +42,17 @@
     </div>
   </div>
 </div>
-<div class="filter-icon-container" *ngIf="showIcons">
+<!-- <div class="filter-icon-container" >
   <i class="fa fa-sliders fa-flip-both fa-2x icon-with-border"></i>
-</div>
+</div> -->
+    <div class="filter-icon-container" *ngIf="showIcons">
+      <i class="fa fa-sliders fa-flip-both fa-2x"></i>
+      <div class="filter-dropdown">
+        <!-- Dropdown content goes here -->
+        <ul>
+          <li>Make an account</li>
+          <li>Help</li>
+          <!-- Add more options as needed -->
+        </ul>
+      </div>
+    </div>

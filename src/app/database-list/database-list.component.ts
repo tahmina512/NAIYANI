@@ -13,4 +13,7 @@ export class DatabaseListComponent implements OnInit {
     //   this.router.navigate(['/info']);
     // }, 6000);
   }
+  navigateDatabasePage() {
+    this.router.navigate(['/database-btn']);
+  }
 }

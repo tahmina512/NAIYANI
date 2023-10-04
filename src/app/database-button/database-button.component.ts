@@ -11,6 +11,10 @@ export class DatabaseButtonComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.router.navigate(['/list']);
-    }, 6000);
+    }, 7000);
+  }
+  navigateToSignINPage() {
+    console.log('check');
+    this.router.navigate(['']);
   }
 }
