@@ -12,23 +12,23 @@
       </p>
     </div>
 
-    <div class="position" *ngIf="showIcons">
-      <div>
-        <div>
-          <button class="gradient-button username-button">
-            <i class="fa-solid fa-user fa-2xl"></i>
-          </button>
-        </div>
-        <div>
-          <button class="gradient-button password-button">
-            <i class="fas fa-key fa-2xl"></i>
-          </button>
-        </div>
-        <div>
-          <button class="arrow-button">
-            <i class="fa fa-arrow-right fa-2xl"></i>
-          </button>
-        </div>
+    <div class="gradient-button animationAppearance" *ngIf="showIcons">
+      <div class="input-container">
+        <input
+          type="text"
+          class="expanding-input icon"
+          placeholder="&#xf007;"
+          style="font-family: Arial, FontAwesome"
+        />
+        <input
+          type="password"
+          class="expanding-input icon"
+          placeholder="&#xf084;"
+          style="font-family: Arial, FontAwesome"
+        />
+        <button class="arrow-button">
+          <i class="fa fa-arrow-right fa-2xl"></i>
+        </button>
       </div>
     </div>
     <div class="moveLines" *ngIf="showDiv">

@@ -26,8 +26,8 @@ export class LOGINPAGEComponent implements OnInit {
       const myDiv = document.querySelector('.container') as HTMLElement;
       myDiv.classList.add('show-border');
     }, 9500);
-    setTimeout(() => {
-      this.router.navigate(['/database-btn']);
-    }, 21000);
+    // setTimeout(() => {
+    //   this.router.navigate(['/database-btn']);
+    // }, 21000);
   }
 }

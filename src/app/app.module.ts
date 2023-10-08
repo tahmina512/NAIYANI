@@ -7,6 +7,8 @@ import { DatabaseButtonComponent } from './database-button/database-button.compo
 import { DatabaseListComponent } from './database-list/database-list.component';
 import { DataInfoComponent } from './data-info/data-info.component';
 import { LOGINPAGEComponent } from './login-page/login-page.component';
+import { ButtonInputComponent } from './button-input/button-input.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,8 +16,14 @@ import { LOGINPAGEComponent } from './login-page/login-page.component';
     DatabaseListComponent,
     DataInfoComponent,
     LOGINPAGEComponent,
+    ButtonInputComponent,
   ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
