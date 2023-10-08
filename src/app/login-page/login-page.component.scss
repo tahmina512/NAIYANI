@@ -49,6 +49,10 @@
   border: none;
 }
 .arrow-button {
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   width: 42px;
   height: 42px;
