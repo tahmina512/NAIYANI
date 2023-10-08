@@ -1,1 +1,75 @@
-<p>button-input works!</p>
+<div class="outer-container">
+  <div class="services" [ngClass]="{ 'move-up': moveLogo }">
+    <div class="container">
+      <p>
+        <span class="gradient">N</span>
+        <span class="gradient">A</span>
+        <span class="gradient">I</span>
+        <span class="gradient">Y</span>
+        <span class="gradient">A</span>
+        <span class="gradient">N</span>
+        <span class="gradient">I</span>
+      </p>
+    </div>
+
+    <div class="position" *ngIf="showIcons">
+      <div class="input-container">
+        <div>
+          <button
+            class="gradient-button username-button"
+            (click)="showUserBox('username')"
+          >
+            <input
+              *ngIf="isUserVisible"
+              type="text"
+              class="expanding-input"
+              [(ngModel)]="usernameValue"
+              (focusout)="handleInputFocusout('username', $event)"
+              #usernameInput
+            />
+            <i class="fa-solid fa-user icon" *ngIf="!isUserVisible"></i>
+          </button>
+        </div>
+
+        <button
+          class="gradient-button password-button"
+          (click)="showPasswordBox('password')"
+        >
+          <input
+            class="expanding-input"
+            *ngIf="isPasswordVisible"
+            type="password"
+            [(ngModel)]="passwordValue"
+            (focusout)="handleInputFocusout('password', $event)"
+            #passwordInput
+          />
+
+          <i class="fas fa-key icon" *ngIf="!isPasswordVisible"></i>
+        </button>
+
+        <button class="arrow-button">
+          <i class="fa fa-arrow-right fa-2xl"></i>
+        </button>
+      </div>
+    </div>
+    <div class="moveLines" *ngIf="showDiv">
+      <div class="box">
+        <div class="inner"></div>
+
+        <div class="box1">
+          <div class="inner1"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="filter-icon-container" *ngIf="showIcons">
+  <i class="fa fa-sliders fa-flip-both fa-2x"></i>
+  <div class="filter-dropdown">
+    <ul>
+      <li><a href="#">Make an account</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+</div>
