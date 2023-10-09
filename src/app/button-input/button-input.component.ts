@@ -43,7 +43,7 @@ export class ButtonInputComponent implements OnInit {
     }
     setTimeout(() => {
       this.usernameInput.nativeElement.focus();
-    });
+    }, 1);
   }
 
   showPasswordBox(inputType: string) {
@@ -52,10 +52,9 @@ export class ButtonInputComponent implements OnInit {
     }
     setTimeout(() => {
       this.passwordInput.nativeElement.focus();
-    });
+    }, 1);
   }
   handleInputFocusout(inputType: string, event: FocusEvent): void {
-
     if (inputType === 'username') {
       const inputElement = event.target as HTMLInputElement;
       if (inputElement.value.trim() === '') {
@@ -69,5 +68,4 @@ export class ButtonInputComponent implements OnInit {
       }
     }
   }
- 
 }
