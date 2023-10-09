@@ -1,4 +1,10 @@
-import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  Renderer2,
+  ViewChild,
+} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -38,19 +44,19 @@ export class ButtonInputComponent implements OnInit {
     // }, 21000);
   }
   showUserBox(inputType: string) {
-    if (inputType === 'username') {
-      this.isUserVisible = true;
-    
-    setTimeout(() => {
-      if (this.usernameInput && this.usernameInput.nativeElement) {
-        this.usernameInput.nativeElement.focus();
+      if (inputType === 'username') {
+        this.isUserVisible = true;
       }
-    });
-  }
-    // setTimeout(() => {
-    //   this.usernameInput.nativeElement.focus();
-    // }, 1);
+    //   setTimeout(() => {
+    //     if (this.usernameInput && this.usernameInput.nativeElement) {
+    //       this.usernameInput.nativeElement.focus();
+    //     }
+    //   });
+    // }
 
+    setTimeout(() => {
+      this.usernameInput.nativeElement.focus();
+    });
   }
 
   showPasswordBox(inputType: string) {
@@ -59,7 +65,7 @@ export class ButtonInputComponent implements OnInit {
     }
     setTimeout(() => {
       this.passwordInput.nativeElement.focus();
-    }, 1);
+    });
   }
   handleInputFocusout(inputType: string, event: FocusEvent): void {
     if (inputType === 'username') {

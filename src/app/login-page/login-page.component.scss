@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 40px;
-  opacity: 0;
   border: none;
 }
 .input-container {
@@ -81,15 +80,14 @@
   top: 100%;
   right: 0;
   margin-top: 2.75px;
-  // background-color: #222020;
+  background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  z-index: 5;
   opacity: 0;
-  visibility: hidden;
   transform: translateY(-30px);
   transition: opacity 0.3s, transform 0.3s;
   transform-origin: top center;
+  z-index: 1;
 }
 
 .filter-dropdown ul {
@@ -142,6 +140,7 @@
   background-color: transparent;
   width: 100%;
   border: 2px solid transparent;
+  z-index: 0;
 }
 p {
   margin-left: 32px;
@@ -231,7 +230,6 @@ p {
   animation: expandBorder2 2.72s forwards;
   animation-delay: 2.72s;
 }
-
 
 @keyframes appearButtons {
   0% {

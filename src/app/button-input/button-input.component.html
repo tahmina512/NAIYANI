@@ -19,13 +19,14 @@
             class="gradient-button username-button"
             (click)="showUserBox('username')"
           >
-            <input
+            <input 
               *ngIf="isUserVisible"
               type="text"
               class="expanding-input"
               [(ngModel)]="usernameValue"
               (focusout)="handleInputFocusout('username', $event)"
               #usernameInput
+            
             />
             <i class="fa-solid fa-user icon" *ngIf="!isUserVisible"></i>
           </button>
