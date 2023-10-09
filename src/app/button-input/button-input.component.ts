@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -40,10 +40,17 @@ export class ButtonInputComponent implements OnInit {
   showUserBox(inputType: string) {
     if (inputType === 'username') {
       this.isUserVisible = true;
-    }
+    
     setTimeout(() => {
-      this.usernameInput.nativeElement.focus();
-    }, 1);
+      if (this.usernameInput && this.usernameInput.nativeElement) {
+        this.usernameInput.nativeElement.focus();
+      }
+    });
+  }
+    // setTimeout(() => {
+    //   this.usernameInput.nativeElement.focus();
+    // }, 1);
+
   }
 
   showPasswordBox(inputType: string) {
