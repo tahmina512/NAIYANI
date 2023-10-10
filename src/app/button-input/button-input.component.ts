@@ -44,9 +44,9 @@ export class ButtonInputComponent implements OnInit {
     // }, 21000);
   }
   showUserBox(inputType: string) {
-      if (inputType === 'username') {
-        this.isUserVisible = true;
-      }
+    if (inputType === 'username') {
+      this.isUserVisible = true;
+    }
     //   setTimeout(() => {
     //     if (this.usernameInput && this.usernameInput.nativeElement) {
     //       this.usernameInput.nativeElement.focus();
@@ -62,10 +62,10 @@ export class ButtonInputComponent implements OnInit {
   showPasswordBox(inputType: string) {
     if (inputType === 'password') {
       this.isPasswordVisible = true;
+      setTimeout(() => {
+        this.passwordInput.nativeElement.focus();
+      });
     }
-    setTimeout(() => {
-      this.passwordInput.nativeElement.focus();
-    });
   }
   handleInputFocusout(inputType: string, event: FocusEvent): void {
     if (inputType === 'username') {
