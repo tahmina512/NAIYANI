@@ -33,7 +33,7 @@ export class ButtonInputComponent implements OnInit {
           this.showDiv = false;
           this.showIcons = true;
         }, 3000);
-      }, 7500);
+      }, 5200);
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;

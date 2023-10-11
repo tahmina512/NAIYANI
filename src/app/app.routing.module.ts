@@ -8,11 +8,10 @@ import { LOGINPAGEComponent } from './login-page/login-page.component';
 import { ButtonInputComponent } from './button-input/button-input.component';
 
 const appRoutes: Routes = [
-  { path: '', component: LOGINPAGEComponent },
+  { path: '', component: ButtonInputComponent },
   { path: 'database-btn', component: DatabaseButtonComponent },
   { path: 'list', component: DatabaseListComponent },
   { path: 'info', component: DataInfoComponent },
-  { path: 'btn-input', component: ButtonInputComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],

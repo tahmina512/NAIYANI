@@ -19,15 +19,20 @@
             class="gradient-button username-button"
             (click)="showUserBox('username')"
           >
-            <input
+            <!-- <input
               *ngIf="isUserVisible"
               type="text"
               class="expanding-input"
               [(ngModel)]="usernameValue"
               (focusout)="handleInputFocusout('username', $event)"
               #usernameInput
-            />
-            <i class="fa-solid fa-user icon" *ngIf="!isUserVisible"></i>
+            /> -->
+            <!-- <i class="fa-solid fa-user icon" style="color: white;" *ngIf="!isUserVisible"></i> -->
+            <span class="icon-background">
+              <i class="fa-solid fa-user icon"></i
+            ></span>
+
+            <span class="btn-text"> username</span>
           </button>
         </div>
 
@@ -35,20 +40,23 @@
           class="gradient-button password-button"
           (click)="showPasswordBox('password')"
         >
-          <input
+          <!-- <input
             class="expanding-input"
             *ngIf="isPasswordVisible"
             type="password"
             [(ngModel)]="passwordValue"
             (focusout)="handleInputFocusout('password', $event)"
             #passwordInput
-          />
+          /> -->
+          <!-- <span class="icon-background"> <i class="fas fa-key icon"></i></span> -->
+          <span class="icon-background"> <i class="fa-solid fa-lock icon"></i></span>
 
-          <i class="fas fa-key icon" *ngIf="!isPasswordVisible"></i>
+          <span class="btn-text"> password</span>
+          <!-- <i class="fas fa-key icon" *ngIf="!isPasswordVisible"></i> -->
         </button>
 
         <button class="arrow-button">
-          <i class="fa fa-arrow-right fa-2xl"></i>
+          <i class="fa fa-arrow-right fa-2xl arrow-icon"></i>
         </button>
       </div>
     </div>
@@ -65,7 +73,7 @@
 </div>
 
 <div class="filter-icon-container" *ngIf="showIcons">
-  <i class="fa fa-sliders fa-flip-both fa-2x"></i>
+  <i class="fa fa-sliders fa-flip-both fa-2xl" style="color: white"></i>
   <div class="filter-dropdown">
     <ul>
       <li><a href="#">Make an account</a></li>
