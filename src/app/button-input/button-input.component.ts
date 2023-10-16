@@ -6,7 +6,6 @@ import {
   ViewChild,
 } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-button-input',
   templateUrl: './button-input.component.html',
@@ -17,6 +16,7 @@ export class ButtonInputComponent implements OnInit {
   moveLogo: boolean = false;
   showDiv: Boolean = false;
   showIcons: Boolean = false;
+
   isUserVisible: Boolean = false;
   isPasswordVisible: Boolean = false;
   usernameValue: string = '';
@@ -33,7 +33,7 @@ export class ButtonInputComponent implements OnInit {
           this.showDiv = false;
           this.showIcons = true;
         }, 3000);
-      }, 5200);
+      }, 5300);
     }, 2000);
     setTimeout(() => {
       const myDiv = document.querySelector('.container') as HTMLElement;
@@ -80,5 +80,11 @@ export class ButtonInputComponent implements OnInit {
         this.isPasswordVisible = false; // Hide the input box
       }
     }
+  }
+  submitSomething() {
+    console.log('hello tisha');
+  }
+  onSubmit() {
+    console.log('hi');
   }
 }

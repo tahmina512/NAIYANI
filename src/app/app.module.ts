@@ -9,6 +9,8 @@ import { DataInfoComponent } from './data-info/data-info.component';
 import { LOGINPAGEComponent } from './login-page/login-page.component';
 import { ButtonInputComponent } from './button-input/button-input.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
