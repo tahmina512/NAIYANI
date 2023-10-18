@@ -85,6 +85,6 @@ export class ButtonInputComponent implements OnInit {
     console.log('hello tisha');
   }
   onSubmit() {
-    console.log('hi');
+     this.router.navigate(['/database-btn']);
   }
 }
